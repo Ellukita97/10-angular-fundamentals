@@ -1,5 +1,5 @@
 import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
-import { ConnectButtonComponent } from "../button/connect-button/connect-button.component";
+import { ConnectButtonComponent } from '../button/connect-button/connect-button.component';
 
 @Component({
   selector: 'app-hero',
@@ -9,7 +9,8 @@ import { ConnectButtonComponent } from "../button/connect-button/connect-button.
 })
 export class HeroComponent {
   public resetColor: boolean = false;
-  public buttonCircleName = "CONNECT";
+  public buttonCircleName = 'CONNECT';
+  public msgButtonConect = '';
   public colours = [
     'select color yellow button',
     'select color orange button',
@@ -20,6 +21,10 @@ export class HeroComponent {
     'select color blue button',
     'select color violet button',
   ];
+
+  getMessage(msg: string) {
+    this.msgButtonConect = msg;
+  }
 
   handleClick(): void {
     this.resetColor = true;

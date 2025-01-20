@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 
 @Component({
   selector: 'app-connect-button',
@@ -8,9 +8,9 @@ import { Component, input } from '@angular/core';
 })
 export class ConnectButtonComponent {
   public titleButton = input<string>();
+  public mensajeEnviado = output<string>();
 
-  updateButtonNameClicked():string{
-    
-    return "Button connect clicked"
+  buttonIsClicked(){
+    this.mensajeEnviado.emit("Button connect clickeado");
   }
 }

@@ -1,5 +1,6 @@
 <section class="hero">
   <h1 class="hero__title">Graphic design and illustration services.</h1>
+  <span>{{msgButtonConect}}</span>
   <menu class="menu-colors">
     <li>
       @if (resetColor) {
@@ -431,6 +432,6 @@
       Upgrade your dream vision with <br />
       personality-filled designs.
     </p>
-      <app-connect-button [titleButton]="buttonCircleName"/>
+      <app-connect-button (mensajeEnviado)="getMessage($event)" [titleButton]="buttonCircleName"/>
   </div>
 </section>
