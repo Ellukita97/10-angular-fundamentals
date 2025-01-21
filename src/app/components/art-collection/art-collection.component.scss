@@ -1,10 +1,11 @@
 @use '../../ui/styles/mixins.scss' as mixins;
+@use '../../ui/styles/variables.scss' as variables;
 
 .art-collection{
     display: flex;
     gap: 8px;
     img{
-        outline: 2px solid #1e1e1e;
+        outline: 2px solid variables.$black;
         width: 50%;
     }
     div{
@@ -12,7 +13,7 @@
         @include mixins.container-gap(20px);
         flex-direction: column;
         padding: 4em;
-        outline: 2px solid #1e1e1e;
+        outline: 2px solid variables.$black;
         width: 50%;
     
         h3{
@@ -41,7 +42,7 @@
 
             &:hover{
                 background-color: #fbe462;
-                color: #1e1e1e;
+                color: variables.$black;
                 text-decoration: underline;
                 transition: all .1s;
             }

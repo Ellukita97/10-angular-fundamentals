@@ -1,9 +1,10 @@
 @use '../../../ui/styles/mixins.scss' as mixins;
+@use '../../../ui/styles/variables.scss' as variables;
 
 .button-connect {
     @include mixins.container(center);
     align-items: center;
-    border: 2px solid #1e1e1e;
+    border: 2px solid  variables.$black;
     font-size: 20px;
     height: 8rem;
     width: 8rem;

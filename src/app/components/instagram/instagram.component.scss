@@ -1,9 +1,11 @@
+@use '../../ui/styles/variables.scss' as variables;
+
 .instagram {
     display: flex;
     flex-direction: column;
     gap: 8px;
     h3 {
-      outline: 2px solid #1e1e1e;
+      outline: 2px solid  variables.$black;
       padding: 0.2rem;
       font-size: 20px;
       font-weight: 400;
@@ -13,7 +15,7 @@
       gap: 8px;
       grid-template-columns: repeat(4, 1fr);
       & li {
-            border-left: 2px solid #1e1e1e;
+            border-left: 2px solid  variables.$black;
         list-style: none;
         position: relative;
         width: 100%;

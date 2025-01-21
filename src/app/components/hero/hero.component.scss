@@ -1,13 +1,14 @@
 @use '../../ui/styles/mixins.scss' as mixins;
+@use '../../ui/styles/variables.scss' as variables;
 
 .hero {
   position: relative;
-  outline: 2px solid #1e1e1e;
+  outline: 2px solid  variables.$black;
   cursor: url('../../../../public/image/paintbrush.ico') 0 110, auto;
 
   &__title {
     padding: 16px 40px;
-    border-bottom: 2px solid #1e1e1e;
+    border-bottom: 2px solid  variables.$black;
     font-size: 2rem;
   }
 
@@ -40,16 +41,11 @@
   @each $key, $value in $colors {
     & :nth-child(#{$key}) {
       button {
-        outline: 2px solid #1e1e1e;
+        outline: 2px solid  variables.$black;
         background-color: $value;
       }
     }
   }
-}
-
-.head-printeable {
-  height: 73vh;
-  width: 100%;
 }
 
 .description-div {

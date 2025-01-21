@@ -1,20 +1,17 @@
 @use '../../ui/styles/mixins.scss' as mixins;
+@use '../../ui/styles/variables.scss' as variables;
 
 .footer {
   @include mixins.container(space-between);
-  outline: 2px solid #1e1e1e;
+  outline: 2px solid  variables.$black;
   height: 40px;
-
-  svg {
-    width: 25px;
-  }
 
   &__menu {
     display: flex;
     list-style: none;
 
     button {
-      outline: 2px solid #1e1e1e;
+      outline: 2px solid  variables.$black;
       background-color: #fff;
       border: none;
       display: flex;
@@ -31,7 +28,7 @@
     }
 
     a {
-      border-right: 2px solid #1e1e1e;
+      border-right: 2px solid  variables.$black;
       display: flex;
       justify-content: center;
       width: 48px;
@@ -47,7 +44,7 @@
 
 .created-by {
   text-decoration: none;
-  outline: 2px solid #1e1e1e;
+  outline: 2px solid  variables.$black;
   @include mixins.container(center);
   padding: 8px;
   height: 100%;
@@ -64,7 +61,7 @@
     padding: 8px;
 
     span {
-      outline: 2px solid #1e1e1e;
+      outline: 2px solid  variables.$black;
       display: flex;
       justify-content: center;
       height: 100%;

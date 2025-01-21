@@ -1,9 +1,12 @@
 import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import { ConnectButtonComponent } from '../button/connect-button/connect-button.component';
+import { ReturnColorSvgComponent } from "../../svg/hero/return-color-svg/return-color-svg.component";
+import { ResetColorSvgComponent } from "../../svg/hero/reset-color-svg/reset-color-svg.component";
+import { HeadPrintableComponent } from "../../svg/hero/head/head-printable/head-printable.component";
 
 @Component({
   selector: 'app-hero',
-  imports: [ConnectButtonComponent],
+  imports: [ConnectButtonComponent, ReturnColorSvgComponent, ResetColorSvgComponent, HeadPrintableComponent],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
 })
